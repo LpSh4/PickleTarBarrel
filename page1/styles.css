@@ -1,13 +1,10 @@
-* {
-	font-family: Work Sans;
-}
-
 a {
 	font-style: none;
 	color: white;
 }
 
 .header {
+	font-family: Work Sans;
 	background-color: #74C69D;
 	display: flex;
 	flex-direction: column;
@@ -78,11 +75,49 @@ a {
 	border-radius: 5px;
 }
 
-.article__div {
+.main {
+	font-family: Work Sans;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.main__section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+}
+
+.partners__ul {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 16px;
+}
+
+.partners__li:nth-child(1) {
+	color:#74C69D;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 15px;
+}
+
+.partners__li:nth-child(2) {
+	color: black;
+	font-weight: 700;
+	font-family: Crimson Text;
+	
 }
 
 @font-face {
-		font-family: Work Sans;
-		src: url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap);
-	}
+	font-family: Work Sans;
+	src: url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap);
+}
+
+@font-face {
+	font-family: Crimson Text;
+	src: url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap);
+}
