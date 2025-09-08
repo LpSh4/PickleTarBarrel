@@ -203,6 +203,15 @@ a {
 	color: white;
 }
 
+.main .team {
+	margin: 15px 0 15px 0;
+	display: flex;
+	align-items: center;
+	height: 100px;
+	width: 70%;
+	background-color: black;
+}
+
 @font-face {
 	font-family: Work Sans;
 	src: url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap);
