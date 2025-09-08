@@ -207,9 +207,44 @@ a {
 	margin: 15px 0 15px 0;
 	display: flex;
 	align-items: center;
-	height: 100px;
+	justify-content: center;
 	width: 70%;
-	background-color: black;
+	background-color: yellow;
+}
+
+.team__article {
+	display: flex;
+	align-items: center;
+	justify-content: baseline;
+	gap: 20px;
+}
+
+.content__div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.content__div:nth-child(1) {
+	font-size: 16px;
+	font-weight: 700;
+	color: #74C69D;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.content__div:nth-child(2) {
+	font-size: 40px;
+	font-weight: 700;
+	color: #212529;
+	font-family: Crimson Text;
+}
+
+.content__div:nth-child(3) {
+	font-size: 20px;
+	font-weight: 400;
+	color: black;
 }
 
 @font-face {
