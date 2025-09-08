@@ -146,10 +146,11 @@ a {
 	color: white;
 }
 
-.main__section.content {
+.main__content{
+	background-color: black;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	width: 70%;
+	gap: 110px;
 }
 
 .main .content__article.article {
