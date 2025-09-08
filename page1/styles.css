@@ -229,12 +229,14 @@ a {
 	width: 100%;
 	margin: 45px 0 45px 0;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, auto);
+	grid-auto-columns: auto;
 	column-gap: 47px;
 	justify-content: space-between;
 }
 
 .profiles__employee {
+	width: 262px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -248,7 +250,8 @@ a {
 .team .employee__descr{
 	display: flex;
 	flex-direction: column;
-
+	text-align: left;
+	align-items: baseline;
 }
 
 .team .descr__name {
