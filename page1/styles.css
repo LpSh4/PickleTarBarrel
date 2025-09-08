@@ -147,13 +147,6 @@ a {
 	color: white;
 }
 
-.main__content{
-	background-color: black;
-	display: flex;
-	width: 70%;
-	gap: 110px;
-}
-
 .main__content {
 	margin-top: 73px;
 	width: 70%;
