@@ -229,7 +229,7 @@ a {
 	width: 100%;
 	margin: 45px 0 45px 0;
 	display: grid;
-	grid-template-columns: repeat(4, auto);
+	grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
 	grid-auto-columns: auto;
 	column-gap: 47px;
 	justify-content: space-between;
