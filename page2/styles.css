@@ -35,7 +35,6 @@ a {
 }
 
 .btn-cont__button {
-	margin: 10px 0 0 0;
 	width: 170px;
 	height: 48px;
 	background-color: black;
@@ -89,12 +88,13 @@ a {
 }
 
 .main .main__content {
-	margin-top: 82px;
+	margin: 82px 0 100px 0;
 	width: 70%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 64px;
 }
 
 .content .slides {
@@ -107,7 +107,36 @@ a {
 }
 
 .content .slides__slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.footer {
+	background-color: #74C69D;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__nav {
+	margin: 50px 0 50px 0;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__socials {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px
+}
+
+.footer__copyright {
+	font-family: Work Sans;
+	font-weight: 400;
+	font-size: 20px;
+	color: white;
 }
 
 @font-face {
