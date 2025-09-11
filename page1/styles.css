@@ -180,7 +180,7 @@ a {
 	font-size: 15px;
 }
 
-.main .team {
+.main__team {
 	margin: 15px 0 54px 0;
 	display: flex;
 	flex-direction: column;
@@ -315,4 +315,22 @@ a {
 @font-face {
 	font-family: Crimson Text;
 	src: url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap);
+}
+
+@media(max-width: 1440px) {
+	.header__nav {
+		width: 80.42%;
+	}
+
+	.main__content {
+		width: 82%;
+	}
+
+	.main__section {
+		width: 80.42%;
+	}
+
+	.main__team {
+		width: 81.7%;
+	}
 }

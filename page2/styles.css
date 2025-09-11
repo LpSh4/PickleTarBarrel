@@ -3,6 +3,12 @@ a {
 	color: white;
 }
 
+img {
+	width: 100%;
+	height: 100%;
+	
+}
+
 .header {
 	font-family: Work Sans;
 	background-color: #74C69D;
@@ -89,7 +95,7 @@ a {
 
 .main .main__content {
 	margin: 82px 0 100px 0;
-	width: 70%;
+	width: 82.5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -100,13 +106,13 @@ a {
 .content .slides {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 555px);
+	grid-template-columns: repeat(auto-fit, 47.8%);
 	grid-template-rows: repeat(auto-fit, 1fr);
 	justify-content: center;
 	gap: 55px;
 }
 
-.content .slides__slide {
+.slides__slide {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -147,4 +153,10 @@ a {
 @font-face {
 	font-family: Crimson Text;
 	src: url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap);
+}
+
+@media(max-width: 1440px) {
+	.footer__nav {
+		
+	}
 }
