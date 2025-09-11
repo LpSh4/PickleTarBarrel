@@ -51,12 +51,12 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	gap: 78px;
 }
 
 .main__title {
 	margin-top: 35px;
 	width: 70%;
-	background-color: aqua;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -65,7 +65,8 @@ a {
 	gap: 16px;
 }
 
-.title__div:nth-child(1) {
+.title .title__div:nth-child(1) {
+	color: #74C69D;
 	font-size: 16px;
 	font-weight: 700;
 	font-style: bold;
@@ -74,7 +75,7 @@ a {
 }
 
 
-.title__div:nth-child(2) {
+.title .title__div:nth-child(2) {
 	font-family: Crimson Text;
 	font-size: 40px;
 	font-weight: 700;
@@ -82,10 +83,97 @@ a {
 }
 
 
-.title__div:nth-child(3) {
+.title .title__div:nth-child(3) {
 	font-size: 20px;
 	font-weight: 400;
 	font-style: normal;
+}
+
+.content {
+	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 340px);
+	justify-content: space-around;
+}
+
+.content .content__card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 50px;
+	box-shadow: 5px 6px 8px -2px rgba(0,0,0,0.51);
+	-webkit-box-shadow: 5px 6px 8px -2px rgba(0,0,0,0.51);
+	-moz-box-shadow: 5px 6px 8px -2px rgba(0,0,0,0.51);
+}
+
+.card__title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.card .title__div:nth-child(1) {
+	font-size: 15px;
+	font-weight: 400px;
+	font-style: normal;
+}
+
+.card .card__price {
+	font-weight: 700;
+	font-style: bold;
+	font-size: 40px;
+	color: black;
+}
+
+.card .title__div:nth-child(2) {
+	font-size: 15px;
+	font-weight: 400px;
+	font-style: normal;
+	color: #212529BF;
+}
+
+.card .title__div:nth-child(3) {
+	font-size: 15px;
+	font-weight: 400px;
+	font-style: normal;
+	color: #21252980;
+}
+
+.card .card__conditions {
+	display: flex;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.card .conditions__ul {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	gap: 14px;
+	color: #212529;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.card .conditions__li {
+	list-style-image: url(icon/main/check.svg);
+}
+
+.card .card__button--btn {
+	width: 170px;
+	height: 48px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	border-radius: 5px;
 }
 
 .footer {
