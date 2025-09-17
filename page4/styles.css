@@ -1,21 +1,147 @@
 .header {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 22px 0 22px 0;
+	background-color: #F5F7FA;
 }
 
 .nav {
+	padding: 22px 0 22px 0;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
-.nav-menu {
+.nav__nav-menu {
 	width: 40.8%;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	gap: 8.503%;
+}
+
+.nav__nav-menu a {
+	color: #18191F;
+	font-family: Intel;
+	font-weight: 500;
+}
+
+.nav__account-access {
+	width: 12.7%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 7.7%;
+}
+
+.account-access__button--login {
+	font-family: Inter;
+	background-color: #F5F7FA;
+	color: #4CAF4F;
+	padding: 10px 20px 10px 20px;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+.account-access__button--signup {
+	font-family: Inter;
+	background-color: #4CAF4F;
+	color: #F5F7FA;
+	padding: 10px 20px 10px 20px;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+.header__slider {
+	font-family: Inter;
+	display: flex;
+	width: 100%;
+	height: 600px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.slider__slider-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+}
+
+.slider-title__text {
+	font-size: 64px;
+	font-weight: 600;
+	color: #4D4D4D;
+}
+
+.slider-title__text span {
+	color: #4CAF4F;
+}
+
+.slider-title__descr {
+	font-size: 16px;
+	font-weight: 400;
+	color: #717171;
+}
+
+.slider-title__button {
+	background-color: #4CAF4F;
+	color: #FFFFFF;
+	padding: 14px 32px 14px 32px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.main__clients {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.clients__clients-title {
+	width: 77.1%;
+	font-family: Inter;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.clients-title__title {
+	font-size: 36px;
+	color: #4D4D4D;
+	font-weight: 600;
+}
+
+.clients-title__descr {
+	font-size: 16px;
+	color: #717171;
+	font-weight: 400;
+}
+
+.clients__clients-list {
+	width: 80%;
+	display: flex;
+	align-items: center;
+}
+
+.clients-list__list {
+	padding: 25px 0 25px 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 }
