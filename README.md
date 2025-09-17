@@ -3,7 +3,11 @@ be
 
 IT learning curve tries to brainwash me into killing myself
 
-page1: https://www.figma.com/design/slNuM27SuaTHS4wpnsq4aY/Responsive-Startup-Website--Community-?node-id=0-1&p=f&t=4IQOn74ikYKYwroU-0
+page1-3: https://www.figma.com/design/slNuM27SuaTHS4wpnsq4aY/Responsive-Startup-Website--Community-?node-id=0-1&p=f&t=4IQOn74ikYKYwroU-0
+
+
+page4: https://www.figma.com/design/ShQFnurUDK7hVwksJdVsBE/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=0-1&p=f&t=TIitFG4pIiqmtBTy-0
+
 
 9.11.25
  - Wrong usage of BEM methodology. Look into that.
