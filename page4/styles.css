@@ -216,7 +216,7 @@
 }
 
 .main__main-timespending {
-	margin-top: 185px;
+	margin-top: 236px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -259,6 +259,8 @@
 	padding: 14px 32px 14px 32px;
 	border-radius: 4px;
 }
+
+
 
 @font-face {
 	font-family: Inter;
