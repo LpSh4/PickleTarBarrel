@@ -260,7 +260,72 @@
 	border-radius: 4px;
 }
 
+.main__main-statistics {
+	margin-top: 48px;
+	padding: 64px 0 64px 0;
+	width: 100%;
+	background-color: #F5F7FA;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
 
+.main-statistics__statistics-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Inter;
+}
+
+.statistics-title__title {
+	font-size: 36px;
+	font-weight: 600;
+	color: #4D4D4D;
+}
+
+.statistics-title__title span {
+	color: #4CAF4F;
+}
+
+.statistics-title__descr {
+	font-size: 16px;
+	font-weight: 400;
+	color: #18191F;
+}
+
+.main-statistics__statistics-content {
+	width: 37.5%;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	column-gap: 5.56%;
+	grid-template-rows: repeat(2, 50%);
+	row-gap:25%;
+}
+
+.statistics-content__statistics-chip {
+	display: flex;
+	gap: 6.28%;
+	align-items: center;
+}
+
+.statistics-chip__chip__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Inter
+}
+
+.chip-content__amount {
+	font-size: 28px;
+	font-weight: 700;
+	color: #4D4D4D;
+}
+
+.chip-content__title {
+	font-size: 16px;
+	font-weight: 400;
+	color: #717171;
+}
 
 @font-face {
 	font-family: Inter;
