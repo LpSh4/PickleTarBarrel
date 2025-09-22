@@ -68,7 +68,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 32px;
+	gap: 16px;
 }
 
 .slider-title__text {
@@ -85,6 +85,11 @@
 	font-size: 16px;
 	font-weight: 400;
 	color: #717171;
+}
+
+.slider-title__btn-cont {
+	width: 100%;
+	margin-top: 16px;
 }
 
 .slider-title__button {
@@ -297,9 +302,9 @@
 	width: 37.5%;
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
-	column-gap: 5.56%;
-	grid-template-rows: repeat(2, 50%);
-	row-gap:25%;
+	/*column-gap: 5.56%;*/
+	grid-template-rows: repeat(2, 1fr);
+	/*row-gap:25%;*/
 }
 
 .statistics-content__statistics-chip {
@@ -325,6 +330,49 @@
 	font-size: 16px;
 	font-weight: 400;
 	color: #717171;
+}
+
+.main__main-footer-design {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main-footer-design__footer-design-content {
+	font-family: Inter;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 41.74%;
+	gap: 16px;
+}
+
+.footer-design-content__title {
+	font-size: 36px;
+	font-weight: 600;
+	color: #4D4D4D;
+}
+
+.footer-design-content__content {
+	font-size: 14px;
+	font-weight: 400;
+	color: #717171;
+}
+
+.footer-design-content__btn-cont {
+	width: 100%;
+	margin-top: 16px;
+}
+
+.footer-design-content__button {
+	color: white;
+	font-weight: 500;
+	font-size: 16px;
+	background-color: #4CAF4F;
+	padding: 14px 32px 14px 32px;
+	border-radius: 4px;
 }
 
 @font-face {
