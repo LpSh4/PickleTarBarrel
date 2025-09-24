@@ -301,11 +301,12 @@
 .main-statistics__statistics-content {
 	width: 37.5%;
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
-	/*column-gap: 5.56%;*/
-	grid-template-rows: repeat(2, 1fr);
-	/*row-gap:25%;*/
+	grid-template-columns: repeat(auto-fit, 255px);
+	row-gap: 40px;
+	justify-content: center;
+	column-gap: 30px;
 }
+
 
 .statistics-content__statistics-chip {
 	display: flex;
@@ -313,7 +314,7 @@
 	align-items: center;
 }
 
-.statistics-chip__chip__content {
+.statistics-chip__chip-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -374,6 +375,8 @@
 	padding: 14px 32px 14px 32px;
 	border-radius: 4px;
 }
+
+
 
 @font-face {
 	font-family: Inter;
