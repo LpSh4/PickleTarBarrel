@@ -376,9 +376,91 @@
 	border-radius: 4px;
 }
 
+.main__main-customers {
+	padding: 33px 0 33px 0;
+	margin-top: 48px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 44px;
+	background-color: #F5F7FA;
+}
 
+.main-customers__customers-content {
+	width: 51.95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 16px;
+}
 
-@font-face {
+.customers-content__content {
+	width: 100%;
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	color: #717171;
+}
+
+.customers-content__customers-content-title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+}
+
+.customers-content-title__title {
+	width: 100%;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	color: #4CAF4F;
+}
+
+.customers-content-title__descr {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	color: #89939E;
+}
+
+.customers-content__customers-list {
+	width: 100%;
+	margin-top: 16px;
+	gap: 32px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.customers-list__list {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+	justify-content: center;
+}
+
+.customers-list__btn-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.customers-list__button {
+	display: flex;
+	gap: 8px;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	color: #4CAF4F;
+}
+
+.customers-list__button::after{
+	content: url(icon/main/Right_Arrow.svg);
+}
+
+/*@font-face {
 	font-family: Inter;
 	src: url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 }
