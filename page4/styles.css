@@ -520,6 +520,7 @@
 
 .new-marketing-content__chip-title {
 	font-family: Inter;
+	line-height: 28px;
 	font-weight: 600;
 	font-size: 20px;
 	text-align: center;
@@ -529,6 +530,7 @@
 .new-marketing-content__chip-button {
 	display: flex;
 	gap: 8px;
+	padding: 8px 0 8px 0;
 	font-family: Inter;
 	font-weight: 600;
 	font-size: 20px;
@@ -539,6 +541,50 @@
 	content: url(icon/main/Right_Arrow.svg);
 }
 
+.main__main-demo {
+	width: 100%;
+	margin-top: 142px;
+	padding: 32px 0 32px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F5F7FA;
+	font-family: Inter;
+}
+
+.main-demo__demo-title {
+	width: 51.60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+}
+
+.demo-title__title {
+	font-weight: 600;
+	font-size: 64px;
+	text-align: center;
+	color: #263238;
+}
+
+.demo-title__button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	background-color: #4CAF4F;
+	color: white;
+	padding: 14px 32px 14px 32px;
+	border-radius: 4px;
+}
+
+.demo-title__button::after{
+	width: 16px;
+	height: 16px;
+	content: url(icon/main/Right_Arrow_Small.svg);
+}
 
 @font-face {
 	font-family: Inter;
