@@ -302,9 +302,9 @@
 	width: 37.5%;
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
-	/*column-gap: 5.56%;*/
+	column-gap: 5.56%;
 	grid-template-rows: repeat(2, 1fr);
-	/*row-gap:25%;*/
+	row-gap:25%;
 }
 
 .statistics-content__statistics-chip {
@@ -313,11 +313,10 @@
 	align-items: center;
 }
 
-.statistics-chip__chip__content {
+.statistics-chip__chip-content {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	font-family: Inter
+	font-family: Inter;
 }
 
 .chip-content__amount {
