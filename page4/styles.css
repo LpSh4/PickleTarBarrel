@@ -301,10 +301,10 @@
 .main-statistics__statistics-content {
 	width: 37.5%;
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
-	column-gap: 5.56%;
-	grid-template-rows: repeat(2, 1fr);
-	row-gap:25%;
+	grid-template-columns: repeat(auto-fit, 255px);
+	row-gap: 40px;
+	justify-content: center;
+	column-gap: 30px;
 }
 
 .statistics-content__statistics-chip {
@@ -372,6 +372,216 @@
 	background-color: #4CAF4F;
 	padding: 14px 32px 14px 32px;
 	border-radius: 4px;
+}
+
+.main__main-customers {
+	padding: 33px 0 33px 0;
+	margin-top: 48px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 78px;
+	background-color: #F5F7FA;
+}
+
+.main-customers__customers-content {
+	width: 51.95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 16px;
+}
+
+.customers-content__content {
+	width: 100%;
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	color: #717171;
+}
+
+.customers-content__customers-content-title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+}
+
+.customers-content-title__title {
+	width: 100%;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	color: #4CAF4F;
+}
+
+.customers-content-title__descr {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	color: #89939E;
+}
+
+.customers-content__customers-list {
+	width: 100%;
+	margin-top: 16px;
+	gap: 32px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.customers-list__list {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+	justify-content: center;
+}
+
+.customers-list__btn-cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.customers-list__button {
+	display: flex;
+	gap: 8px;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	color: #4CAF4F;
+}
+
+.customers-list__button::after{
+	content: url(icon/main/Right_Arrow.svg);
+}
+
+.main__main-new-marketing {
+	margin-top: 48px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.main-new-marketing__new-marketing-title {
+	width: 77.09%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	font-family: Inter;
+}
+
+.new-marketing-title__title {
+	width: 100%;
+	font-weight: 600;
+	font-size: 36px;
+	color: #4D4D4D;
+	text-align: center;
+}
+
+.new-marketing-title__descr {
+	font-weight: 400;
+	font-size: 16px;
+	color: #717171;
+	text-align: center;
+	width: 56.58%;
+}
+
+.main-new-marketing__new-marketing-content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+}
+
+.new-marketing-content__chip {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 22.02%;
+	padding: 16px 16px 16px 16px;
+	gap: 16px;
+	background-color: #F5F7FA;
+	box-shadow: 0px 8px 16px 0px #ABBED166;
+	border-radius: 8px;
+}
+
+.new-marketing-content__chip-title {
+	font-family: Inter;
+	line-height: 28px;
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	color: #717171
+}
+
+.new-marketing-content__chip-button {
+	display: flex;
+	gap: 8px;
+	padding: 8px 0 8px 0;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	color: #4CAF4F;
+}
+
+.new-marketing-content__chip-button::after{
+	content: url(icon/main/Right_Arrow.svg);
+}
+
+.main__main-demo {
+	width: 100%;
+	margin-top: 142px;
+	padding: 32px 0 32px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F5F7FA;
+	font-family: Inter;
+}
+
+.main-demo__demo-title {
+	width: 51.60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+}
+
+.demo-title__title {
+	font-weight: 600;
+	font-size: 64px;
+	text-align: center;
+	color: #263238;
+}
+
+.demo-title__button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	background-color: #4CAF4F;
+	color: white;
+	padding: 14px 32px 14px 32px;
+	border-radius: 4px;
+}
+
+.demo-title__button::after{
+	width: 16px;
+	height: 16px;
+	content: url(icon/main/Right_Arrow_Small.svg);
 }
 
 @font-face {
