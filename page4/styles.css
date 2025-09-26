@@ -1,3 +1,12 @@
+:root {
+	--bigtitle: 64px;
+	--title: 36px;
+	--bigparagraph: 28px;
+	--paragraph: 20px;
+	--bigdescr: 16px;
+	--descr: 14px;
+}
+
 .header {
 	width: 100%;
 	display: flex;
@@ -16,11 +25,10 @@
 }
 
 .nav__nav-menu {
-	width: 40.8%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	gap: 8.503%;
+	justify-content: center;
+	gap: 50px;
 }
 
 .nav__nav-menu a {
@@ -30,11 +38,10 @@
 }
 
 .nav__account-access {
-	width: 12.7%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 7.7%;
+	gap: 14px;
 }
 
 .account-access__button--login {
@@ -59,7 +66,7 @@
 	font-family: Inter;
 	display: flex;
 	width: 100%;
-	height: 600px;
+	padding: 96px 0 96px 0;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -777,3 +784,94 @@
 	font-family: Inter;
 	src: url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 }
+
+/*@media(max-width: 1024px) {
+	.nav {
+		justify-content: space-between;
+		padding: 10px 12px 0 12px;
+	}
+
+	.nav__nav-menu {
+		gap: 30px;
+		font-size: 14px;
+	}
+
+	.nav__account-access {
+		gap: 10px;
+	}
+
+	.header__slider {
+		padding: 67px 0 67px 0;
+	}
+
+	.slider-title__text {
+		font-size: 48px
+	}
+
+	.slider-title__descr {
+		font-size: 12px;
+	}
+	
+	.slider-title__button {
+    	padding: 12px 28px 12px 28px;
+	    border-radius: 4px;
+    	font-size: 12px;
+    	font-weight: 500;
+	}
+
+	.slider__slider-image {
+		width: 273px;
+	}
+
+	.clients-title__title {
+		font-size: 30px;
+	}
+
+	.clients-title__descr {
+		font-size: 12px;
+	}
+
+	.clients-list__list {
+		padding: 18px 0 18px 0;
+	}
+
+	.clients-list__content img{
+		height: 40px;
+	}
+
+	.suitable-title__title {
+		font-size: 28px;
+	}
+
+	.suitable-title__descr {
+		font-size: 12px;
+	}
+
+	.suitable-chip__title {
+		font-size: 20px;
+	}
+
+	.suitable-chip__descr {
+		font-size: 12px;
+	}
+
+	.main__main-timespending {
+    margin-top: 170px;
+	}
+
+	.main-timespending__img-cont img{
+		width: 310px;
+	}
+
+	.timespending-content__title {
+		font-size: 28px;
+	}
+
+	.timespending-content__descr {
+		font-size: 12px;
+	}
+
+	.timespending-content__button {
+		font-size: 14px;
+	}
+}*/
