@@ -50,7 +50,7 @@
 	color: #4CAF4F;
 	padding: 10px 20px 10px 20px;
 	border-radius: 6px;
-	font-size: 14px;
+	font-size: var(--descr);
 }
 
 .account-access__button--signup {
@@ -59,7 +59,7 @@
 	color: #F5F7FA;
 	padding: 10px 20px 10px 20px;
 	border-radius: 6px;
-	font-size: 14px;
+	font-size: var(--descr);
 }
 
 .header__slider {
@@ -79,7 +79,7 @@
 }
 
 .slider-title__text {
-	font-size: 64px;
+	font-size: var(--bigtitle);
 	font-weight: 600;
 	color: #4D4D4D;
 }
@@ -89,7 +89,7 @@
 }
 
 .slider-title__descr {
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	font-weight: 400;
 	color: #717171;
 }
@@ -104,7 +104,7 @@
 	color: #FFFFFF;
 	padding: 14px 32px 14px 32px;
 	border-radius: 4px;
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	font-weight: 500;
 }
 
@@ -129,13 +129,13 @@
 }
 
 .clients-title__title {
-	font-size: 36px;
+	font-size: var(--title);
 	color: #4D4D4D;
 	font-weight: 600;
 }
 
 .clients-title__descr {
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	color: #717171;
 	font-weight: 400;
 }
@@ -175,7 +175,7 @@
 .suitable-title__title {
 	width: 37.7%;
 	font-family: Inter;
-	font-size: 36px;
+	font-size: var(--title);
 	color: #4D4D4D;
 	font-weight: 600;
 	text-align: center;
@@ -184,7 +184,7 @@
 .suitable-title__descr {
 	width: 100%;
 	font-family: Inter;
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	color: #717171;
 	font-weight: 600;
 	text-align: center;
@@ -216,13 +216,13 @@
 
 .suitable-chip__title {
 	font-weight: 700;
-	font-size: 28px;
+	font-size: var(--bigparagraph);
 	color: #4D4D4D;
 }
 
 .suitable-chip__descr {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: var(--descr);
 	color: #717171;
 	padding: 0 8px 0 8px;
 }
@@ -247,13 +247,13 @@
 }
 
 .timespending-content__title {
-	font-size: 36px;
+	font-size: var(--title);
 	font-weight: 600;
 	color: #4D4D4D;
 }
 
 .timespending-content__descr {
-	font-size: 14px;
+	font-size: var(--descr);
 	font-weight: 400;
 	color: #717171;
 }
@@ -266,7 +266,7 @@
 .timespending-content__button {
 	color: white;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	background-color: #4CAF4F;
 	padding: 14px 32px 14px 32px;
 	border-radius: 4px;
@@ -279,10 +279,12 @@
 	background-color: #F5F7FA;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 5%;
 }
 
 .main-statistics__statistics-title {
+	width: 37.5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -290,7 +292,7 @@
 }
 
 .statistics-title__title {
-	font-size: 36px;
+	font-size: var(--title);
 	font-weight: 600;
 	color: #4D4D4D;
 }
@@ -300,7 +302,7 @@
 }
 
 .statistics-title__descr {
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	font-weight: 400;
 	color: #18191F;
 }
@@ -308,7 +310,8 @@
 .main-statistics__statistics-content {
 	width: 37.5%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 255px);
+	grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
 	row-gap: 40px;
 	justify-content: center;
 	column-gap: 30px;
@@ -327,13 +330,13 @@
 }
 
 .chip-content__amount {
-	font-size: 28px;
+	font-size: var(--bigparagraph);
 	font-weight: 700;
 	color: #4D4D4D;
 }
 
 .chip-content__title {
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	font-weight: 400;
 	color: #717171;
 }
@@ -356,13 +359,13 @@
 }
 
 .footer-design-content__title {
-	font-size: 36px;
+	font-size: var(--title);
 	font-weight: 600;
 	color: #4D4D4D;
 }
 
 .footer-design-content__content {
-	font-size: 14px;
+	font-size: var(--descr);
 	font-weight: 400;
 	color: #717171;
 }
@@ -375,7 +378,7 @@
 .footer-design-content__button {
 	color: white;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	background-color: #4CAF4F;
 	padding: 14px 32px 14px 32px;
 	border-radius: 4px;
@@ -388,7 +391,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 78px;
+	gap: 5.42%;
 	background-color: #F5F7FA;
 }
 
@@ -404,7 +407,7 @@
 	width: 100%;
 	font-family: Inter;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	color: #717171;
 }
 
@@ -420,14 +423,14 @@
 	width: 100%;
 	font-family: Inter;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: var(--paragraph);
 	color: #4CAF4F;
 }
 
 .customers-content-title__descr {
 	font-family: Inter;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	color: #89939E;
 }
 
@@ -457,7 +460,7 @@
 	gap: 8px;
 	font-family: Inter;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: var(--paragraph);
 	color: #4CAF4F;
 }
 
@@ -488,14 +491,14 @@
 .new-marketing-title__title {
 	width: 100%;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: var(--title);
 	color: #4D4D4D;
 	text-align: center;
 }
 
 .new-marketing-title__descr {
 	font-weight: 400;
-	font-size: 16px;
+	font-size: var(--bigdescr);
 	color: #717171;
 	text-align: center;
 	width: 56.58%;
@@ -507,7 +510,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 100px;
+	gap: 6.95%;
 }
 
 .new-marketing-content__chip {
@@ -527,7 +530,7 @@
 	font-family: Inter;
 	line-height: 28px;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: var(--paragraph);
 	text-align: center;
 	color: #717171
 }
@@ -538,7 +541,7 @@
 	padding: 8px 0 8px 0;
 	font-family: Inter;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: var(--paragraph);
 	color: #4CAF4F;
 }
 
@@ -569,7 +572,7 @@
 
 .demo-title__title {
 	font-weight: 600;
-	font-size: 64px;
+	font-size: var(--bigtitle);
 	text-align: center;
 	color: #263238;
 }
@@ -624,7 +627,7 @@
 	gap: 8px;font-family: Inter;
 	font-weight: 400;
 	font-style: Regular;
-	font-size: 14px;
+	font-size: var(--descr);
 	color: #F5F7FA;
 }
 
@@ -667,7 +670,7 @@
 	width: 100%;
 	font-family: Inter;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: var(--paragraph);
 	color: white;
 }
 
@@ -688,7 +691,7 @@
 	font-family: Inter;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: var(--descr);
 	color: #F5F7FA;
 }
 
@@ -705,7 +708,7 @@
 	width: 100%;
 	font-family: Inter;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: var(--paragraph);
 	color: white;
 }
 
@@ -726,7 +729,7 @@
 	font-family: Inter;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: var(--descr);
 	color: #F5F7FA;
 }
 
@@ -744,7 +747,7 @@
 .update-form__title {
 	font-family: Inter;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: var(--paragraph);
 	color: white;
 }
 
@@ -758,21 +761,21 @@
 	width: 100%;
 	font-family: Inter;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: var(--descr);
 }
 
 .update-form__input-cont input{
 	width: 100%;
 	font-family: Inter;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: var(--descr);
 	color: #D9DBE1;
 }
 
 .update-form__input::placeholder{
 	font-family: Inter;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: var(--descr);
 	color: #D9DBE1;
 }
 
@@ -785,7 +788,15 @@
 	src: url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 }
 
-/*@media(max-width: 1024px) {
+@media(max-width: 1024px) {
+	:root {
+		--bigtitle: 44px;
+		--title: 26px;
+		--bigparagraph: 20px;
+		--paragraph: 14px;
+		--bigdescr: 11px;
+		--descr: 10px;
+	}
 	.nav {
 		justify-content: space-between;
 		padding: 10px 12px 0 12px;
@@ -793,7 +804,6 @@
 
 	.nav__nav-menu {
 		gap: 30px;
-		font-size: 14px;
 	}
 
 	.nav__account-access {
@@ -803,19 +813,10 @@
 	.header__slider {
 		padding: 67px 0 67px 0;
 	}
-
-	.slider-title__text {
-		font-size: 48px
-	}
-
-	.slider-title__descr {
-		font-size: 12px;
-	}
 	
 	.slider-title__button {
     	padding: 12px 28px 12px 28px;
 	    border-radius: 4px;
-    	font-size: 12px;
     	font-weight: 500;
 	}
 
@@ -823,36 +824,8 @@
 		width: 273px;
 	}
 
-	.clients-title__title {
-		font-size: 30px;
-	}
-
-	.clients-title__descr {
-		font-size: 12px;
-	}
-
 	.clients-list__list {
 		padding: 18px 0 18px 0;
-	}
-
-	.clients-list__content img{
-		height: 40px;
-	}
-
-	.suitable-title__title {
-		font-size: 28px;
-	}
-
-	.suitable-title__descr {
-		font-size: 12px;
-	}
-
-	.suitable-chip__title {
-		font-size: 20px;
-	}
-
-	.suitable-chip__descr {
-		font-size: 12px;
 	}
 
 	.main__main-timespending {
@@ -863,15 +836,18 @@
 		width: 310px;
 	}
 
-	.timespending-content__title {
-		font-size: 28px;
+	.statistics-chip__icon img {
+		width: 34px;
 	}
 
-	.timespending-content__descr {
-		font-size: 12px;
+	.main-footer-design__footer-design-image img {
+		width: 310px;
 	}
 
-	.timespending-content__button {
-		font-size: 14px;
+	.main-customers__customers-image {
+		width: 251px;
 	}
-}*/
+	.new-marketing-content__chip-title {
+		line-height: 20px;
+	}
+}
