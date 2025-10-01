@@ -17,3 +17,10 @@ page4: https://www.figma.com/design/ShQFnurUDK7hVwksJdVsBE/Minimal-Landing-Page-
  - Not every parent has its own size (width/height). Should use that more.
  - Should start using @media
  
+
+10.01.25
+ - I need to specify gaps in pixels
+ - Look into using flex-wrap attribute
+ - Not each media needs complete rebuild of each element. Small changes like gaps and autowrapping is more pleasing and shorter in code
+ - Should specify the max-size (2k) for HTML or body. Sometimes it is more fitting to set main to fixed size and center it relative to HTML, leaving footer and header as fixed elements.
+ - Using ul-li with semantics requires using it only in right places (Actual lists or navigation items)
