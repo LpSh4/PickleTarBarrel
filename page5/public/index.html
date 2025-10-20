@@ -1,11 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html \>
+<html lang="en" \>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" \>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" \>
+    <link href="styles.css" rel="stylesheet" \>
+    <link href="normalgd.css" rel="stylesheet" \>
+    <script src="script.js"></script>
     <title>44th President of the US Did the 911 incident</title>
 </head>
 <body>
-    
+     <header class="header">
+        <nav class="header__header-nav header-nav">
+            <article class="header-nav__logo-wrap">
+                <div class="header-nav__logo-img">
+                    <img src="icon/header/Group 1.svg" \>
+                </div>
+                <div class="header-nav__logo-text">
+                    <a href="###">Start</a>
+                </div>
+            </article>
+            <article class="header-nav__ul-wrap">
+                <ul class="header-nav__ul">
+                    <li class="header-nav__ul-chip"><a href="###">Home</a></li>
+                    <li class="header-nav__ul-chip"><a href="###">Portfolio</a></li>
+                    <li class="header-nav__ul-chip"><a href="###">Services</a></li>
+                    <li class="header-nav__ul-chip"><a href="###">Contact</a></li>
+                </ul>
+            </article>
+        </nav>
+     </header>
+     <main class="main">
+        <section class="main__main-title">
+            <article class="main-title__title-wrap">
+                <div class="main-title__title">
+                    <h1>Login or Sign up</h1>
+                </div>
+                <div class="main-title__subtitle">
+                    <h2>Start using the website</h2>
+                </div>
+            </article>
+            <article class="main-title__descr-wrap">
+                <div class="main-title__descr">
+                    <p>Some might say, that having an account in interweb helps keeping things organized and greatly helps developers distinguishing you from hundreds of others!</p>
+                </div>
+            </article>
+        </section>
+        <section class="main__auth-form">
+            <article class="auth-form__tablist">
+                <button class="auth-form__tab-button auth-form__tab-button--active" data-tab="login">Login</button>
+                <button class="auth-form__tab-button" data-tab="register">Sign up</button>
+            </article>
+            <article class="auth-form__wrapper">
+                <form id="login" class="auth-form__form auth-form__form--active" aria-labelledby="login-title">
+                    <h1 id="login-title" class="auth-form__title">Login</h1>
+                    <div class="auth-form__field">
+                        <label for="login-email" class="auth-form__label">Email</label>
+                        <input type="email" id="login-email" class="auth-form__input" placeholder="Email" required>
+                    </div>
+                    <div class="auth-form__field">
+                        <label for="login-password" class="auth-form__label">Password</label>
+                        <input type="password" id="login-password" class="auth-form__input" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="auth-form__submit">Login</button>
+                    <p class="auth-form__message" id="login-message"></p>
+                </form>
+                <form id="register" class="auth-form__form" aria-labelledby="register-title">
+                    <h1 id="register-title" class="auth-form__title">Sign up</h1>
+                    <div class="auth-form__field">
+                        <label for="register-fullname" class="auth-form__label">Full Name</label>
+                        <input type="text" id="register-fullname" class="auth-form__input" placeholder="Full Name" required>
+                    </div>
+                    <div class="auth-form__field">
+                        <label for="register-email" class="auth-form__label">Email</label>
+                        <input type="email" id="register-email" class="auth-form__input" placeholder="Email" required>
+                    </div>
+                    <div class="auth-form__field">
+                        <label for="register-password" class="auth-form__label">Password</label>
+                        <input type="password" id="register-password" class="auth-form__input" placeholder="Password" required>
+                    </div>
+                    <div class="auth-form__field">
+                        <label for="register-confirm-password" class="auth-form__label">Confirm Password</label>
+                        <input type="password" id="register-confirm-password" class="auth-form__input" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="auth-form__submit">Register</button>
+                    <p class="auth-form__message" id="register-message"></p>
+                </form>
+            </article>
+        </section>
+        <section class="main__user-interaction">
+            <!-- <article id="admin-table" class="user-interaction__block user-interaction__block--active">
+                <h1 class="user-interaction__title">Admin Panel</h1>
+                <table class="user-interaction__admin-table">
+                    <thead>
+                        <tr><th>Email</th><th>Password</th></tr>
+                    </thead>
+                    <tbody id="admin-table-body">
+                    </tbody>
+                </table>
+            </article> -->
+        </section>
+     </main>
+     <footer class="footer">
+        <nav class="footer__footer-nav footer-nav">
+            <ul class="footer-nav__nav-socials nav-socials">
+                <li class="socials__li li"><a href="###"><img src="icon/footer/facebook.svg" \></a></li>
+                <li class="socials__li li"><a href="###"><img src="icon/footer/instagram.svg" \></a></li>
+                <li class="socials__li li"><a href="###"><img src="icon/footer/twitter.svg" \></a></li>
+                <li class="socials__li li"><a href="###"><img src="icon/footer/pinterest.svg" \></a></li>
+                <li class="socials__li li"><a href="###"><img src="icon/footer/tiktok.svg" \></a></li>
+                <li class="socials__li li"><a href="###"><img src="icon/footer/whatsapp.svg" \></a></li>
+                <li class="socials__li li"><a href="###"><img src="icon/footer/youtube.svg" \></a></li>
+            </ul>
+            <div class="footer-nav__copyright-wrap">
+                <p class="footer-nav__copyright">© Start, 2022. All rights reserved.</p>
+            </div>
+        </nav>
+    </footer> 
 </body>
 </html>

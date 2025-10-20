@@ -1,0 +1,334 @@
+:root {
+	--bigtitle: 2.5rem;       /* 40px */
+    --title: 1.875rem;        /* 30px */
+    --bigparagraph: 1.75rem;  /* 28px */
+    --paragraph: 1.25rem;     /* 20px */
+    --bigdescr: 1rem;         /* 16px */
+    --descr: 0.875rem;        /* 14px */
+}
+
+html::-webkit-scrollbar {
+    width: 16px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border: 0px;
+    border: 1px solid #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #74C69D;
+}
+
+/* body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main {
+	min-width: 425px;
+	max-width: 2048px;
+} */
+
+.header {
+    width: 100%;    
+	background-color: #74C69D;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	padding: 35px 0 35px 0;
+	gap: 40px;
+}
+
+.header__header-nav{
+	width: 81.6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav__logo-wrap {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	gap: 18px;
+}
+
+.header-nav__logo-wrap a {
+    font-size: var(--bigtitle);
+    font-family: 'Work Sans';
+    color: white;
+}
+
+.header-nav__ul-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-nav__ul-wrap a{
+    font-size: var(--paragraph);
+    color: white;
+    font-family: 'Work Sans';
+
+}
+
+.header-nav__ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main {
+    margin-bottom: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__main-title {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 40%;
+}
+
+.main-title__title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.main-title__title {
+    color: #74C69D;
+    font-family: Work Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--bigdescr);
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-title__subtitle {
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--bigtitle);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.main-title__descr {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    text-align: center;
+    color: #4b4b4b;
+}
+
+.main__auth-form {
+    margin-top: 30px;
+    box-shadow: rgba(116, 198, 157, 0.4) 5px 5px, rgba(116, 198, 157, 0.3) 10px 10px, rgba(116, 198, 157, 0.2) 15px 15px, rgba(116, 198, 157, 0.1) 20px 20px, rgba(116, 198, 157, 0.05) 25px 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 12px 12px 12px;
+}
+
+.auth-form__tablist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__tab-button {
+    padding: 3px 55px;
+    font-family: Work Sans;
+    font-size: var(--paragraph);
+    text-align: center;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-form__tab-button--active {
+    background-color: #74C69D;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+
+.auth-form__form {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-form__wrapper {
+    width: 100%;
+}
+
+.auth-form__form--active {
+    display: flex;
+}
+
+.auth-form__title {
+    font-family: 'Work Sans';
+    font-size: var(--paragraph);
+    font-weight: 700;
+    font-style: Bold;
+    color: black;
+}
+
+.auth-form__field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.auth-form__label {
+    font-family: 'Work Sans';
+    font-size: var(--bigdescr);
+    color: #333;
+}
+
+.auth-form__input {
+    width: 81.6%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.auth-form__submit {
+    width: 50%;
+    padding: 10px;
+    background: #74C69D;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Work Sans';
+}
+
+.auth-form__message {
+    font-family: 'Work Sans';
+    font-size: var(--descr);
+    color: #333;
+    text-align: center;
+}
+
+.main__user-interaction {
+    margin-top: 60px;
+    width: 81.6%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-interaction__block {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-interaction__title {
+    font-family: 'Work Sans';
+    font-size: var(--paragraph);
+    font-weight: 700;
+    font-style: Bold;
+    color: black;
+}
+
+.user-interaction__admin-table {
+    border: 1px solid #74C69D;
+    background-color: #74C69D;
+    border-radius: 5px;
+    font-family: 'Work Sans';
+    font-size: var(--descr);
+    color: black;
+    text-align: center;
+}
+
+.user-interaction__admin-table th {
+    font-size: var(--bigdescr);
+}
+
+.user-interaction__admin-table th, 
+.user-interaction__admin-table td {
+    padding: 8px 18px;
+    border: 1px solid #74C69D;
+    background-color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	background-color: #74C69D;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-nav {
+	margin: 30px 0 30px 0;
+	width: 81.6%;
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.nav-socials {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px
+}
+
+.footer-nav__copyright {
+	font-family: Work Sans;
+	font-weight: 400;
+	font-size: 20px;
+	color: white;
+}
+
+@font-face {
+	font-family: Work Sans;
+	src: url(fonts/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(fonts/CrimsonText-Regular.ttf) format("truetype");
+}
