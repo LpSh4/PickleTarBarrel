@@ -1,6 +1,10 @@
-const express = require("express");
-const { Pool } = require("pg");
-const cors = require("cors");
+const express = require('express');
+const path = require('path');
+const { Pool } = require('pg');
+const cors = require('cors');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 const app = express();
 const port = 3000;
