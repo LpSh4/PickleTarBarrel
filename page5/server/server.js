@@ -7,20 +7,21 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const app = express();
-const port = 3000;
-
-// Middleware
+const port = 3030;
 app.use(cors());
 app.use(express.json());
-app.use(express.static("../public"));
+app.use(express.static("../public/"));
 
-// PostgreSQL connection
 const pool = new Pool({
   user: "postgres",
   host: "localhost",
   database: "postgres",
   password: "8585",
   port: 5432,
+});
+
+app.get('/', function (req, res) {
+  res.render('index.html', {});
 });
 
 pool.connect((err, client, release) => {
@@ -32,7 +33,6 @@ pool.connect((err, client, release) => {
     release();
 });
 
-// Login endpoint
 app.post("/api/login", async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -52,21 +52,22 @@ app.post("/api/login", async (req, res) => {
         .status(401)
         .json({ success: false, message: "Invalid email or password" });
     }
+
   } catch (error) {
     console.error("Login error:", error);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
 
-// Register endpoint
 app.post('/api/register', async (req, res) => {
+    const { firstname, lastname, email, password, phonenumber } = req.body;
     console.log('Register request:', req.body);
-    const { fullName, email, password } = req.body;
-    if (!fullName || !email || !password) {
-        console.log('Missing fields:', { fullName, email, password });
+    if (!firstname || !lastname || !email || !password || !phonenumber) {
+        console.log('Missing a lot of fields:', { firstname, lastname, email, password, phonenumber });
+        console.log('And req.body is:', req.body)
         return res.status(400).json({
             success: false,
-            message: 'Missing required fields: fullName, email, or password'
+            message: 'Missing required fields!'
         });
     }
     try {
@@ -80,10 +81,10 @@ app.post('/api/register', async (req, res) => {
             });
         }
         // const hashedPassword = await bcrypt.hash(password, saltRounds);
-        console.log('Inserting user:', { fullName, email });
+        console.log('Inserting user:', { firstname, lastname, email });
         await pool.query(
-            'INSERT INTO my_users (full_name, email, password, is_admin) VALUES ($1, $2, $3, $4)',
-            [fullName, email, password, false]
+            'INSERT INTO my_users (firstname, lastname, email, password, phone_number, is_admin) VALUES ($1, $2, $3, $4, $5, $6)',
+            [firstname, lastname, email, password, phonenumber, false]
         );
         res.json({
             success: true,
@@ -98,9 +99,8 @@ app.post('/api/register', async (req, res) => {
     }
 });
 
-// Admin-only endpoint to fetch all my_users
 app.get("/api/my_users", async (req, res) => {
-  const { email } = req.query; // Assume admin email is passed for verification
+  const { email } = req.query;
   try {
     const adminCheck = await pool.query(
       "SELECT is_admin FROM my_users WHERE email = $1",
@@ -120,7 +120,6 @@ app.get("/api/my_users", async (req, res) => {
   }
 });
 
-// Start server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });

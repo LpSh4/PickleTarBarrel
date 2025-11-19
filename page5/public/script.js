@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Tab switching
   const tabs = document.querySelectorAll(".auth-form__tab-button");
   const forms = document.querySelectorAll(".auth-form__form");
 
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       const tabName = e.target.getAttribute("data-tab");
 
-      // Update tab active state
       tabs.forEach((t) => {
         t.classList.remove("auth-form__tab-button--active");
         t.setAttribute("aria-selected", "false");
@@ -18,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.classList.add("auth-form__tab-button--active");
       e.target.setAttribute("aria-selected", "true");
 
-      // Update form visibility
       forms.forEach((form) => {
         form.classList.remove("auth-form__form--active");
         if (form.id === tabName) {
@@ -28,7 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Login form submission
+  // document.getElementById('register-phone').addEventListener('input', function (e) {
+  //     var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+  //     e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+  // });
+
   const loginForm = document.getElementById("login");
   if (loginForm) {
     loginForm.addEventListener("submit", async (e) => {
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </thead>
                 <tbody id="admin-table-body"></tbody>
               </table>
-            </article>
+            </article> 
           `);
           }
           await loadAdminTable();
@@ -72,12 +73,13 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Login form not found");
   }
 
-  // Register form submission
   document.getElementById("register").addEventListener("submit", async (e) => {
     e.preventDefault();
-    const fullName = document.getElementById("register-fullname").value;
+    const firstname = document.getElementById("register-firstname").value;
+    const lastname = document.getElementById("register-lastname").value;
     const email = document.getElementById("register-email").value;
     const password = document.getElementById("register-password").value;
+    const phonenumber = document.getElementById("register-phone").value;
     const confirmPassword = document.getElementById(
       "register-confirm-password"
     ).value;
@@ -92,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch("/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fullName, email, password }),
+        body: JSON.stringify({ firstname, lastname, email, password, phonenumber}),
       });
       const data = await response.json();
       messageEl.textContent = data.message;
@@ -102,12 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Load admin table
   async function loadAdminTable() {
     const tableBody = document.getElementById("admin-table-body");
     tableBody.innerHTML = "";
     try {
-      const email = document.getElementById("login-email").value; // Get logged-in email
+      const email = document.getElementById("login-email").value;
       const response = await fetch(
         `/api/my_users?email=${encodeURIComponent(email)}`,
         {
