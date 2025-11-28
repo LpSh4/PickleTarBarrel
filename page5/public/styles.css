@@ -291,6 +291,118 @@ html::-webkit-scrollbar-thumb {
     background-color: white;
 }
 
+.main__user-form {
+    margin: 80px auto 120px auto;
+    width: 81.6%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-form__container {
+    width: 100%;
+    padding: 50px 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: rgba(116, 198, 157, 0.4) 5px 5px,
+    rgba(116, 198, 157, 0.3) 10px 10px,
+    rgba(116, 198, 157, 0.2) 15px 15px,
+    rgba(116, 198, 157, 0.1) 20px 20px,
+    rgba(116, 198, 157, 0.05) 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-form__title {
+    margin: 0;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    font-size: var(--title);           /* 30px */
+    color: #212529;
+    text-align: center;
+}
+
+.user-form__description {
+    margin: 0 0 32px 0;
+    font-family: 'Work Sans';
+    font-size: var(--bigdescr);        /* 16px */
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Reuse auth-form classes for consistency */
+.user-form__field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-form__field .auth-form__label {
+    font-family: 'Work Sans';
+    font-size: var(--bigdescr);
+    font-weight: 500;
+    color: #333;
+}
+
+.user-form__field .auth-form__input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Work Sans';
+    font-size: var(--bigdescr);
+    box-sizing: border-box;
+}
+
+/* Radio buttons */
+.user-form__radio-group {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.user-form__radio-label {
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans';
+    font-size: var(--bigdescr);
+    color: #333;
+    cursor: pointer;
+}
+
+.user-form__radio-label input[type="radio"] {
+    accent-color: #74C69D;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Submit button – same as login button */
+.user-form__submit {
+    margin-top: 20px;
+    width: 50%;
+    max-width: 300px;
+    padding: 14px;
+    background: #74C69D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.user-form__submit:hover {
+    background: #5ab589;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
